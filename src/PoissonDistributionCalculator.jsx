@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './poisson.css'
 
 const PoissonDistributionCalculator = () => {
   const [lambda, setLambda] = useState('');
@@ -14,6 +15,7 @@ const PoissonDistributionCalculator = () => {
   };
 
   const handleCalculateClick = () => {
+
     const lambdaFloat = parseFloat(lambda);
     const xInt = parseInt(x, 10);
 
@@ -45,13 +47,14 @@ const PoissonDistributionCalculator = () => {
   };
 
   return (
-    <div>
+    <div className='geral'>
+      <img src='./targino/src/img3.jpg' alt='junior'/>
       <h1>Calculadora de Distribuição de Poisson</h1>
-      <label>
+      <label className='label2'>
         Lambda (média de ocorrências por unidade de tempo, espaço, etc.):
-        <input type="number" value={lambda} onChange={handleLambdaChange} />
+        <input type="number" value={lambda} onChange={handleLambdaChange} className='inp2' />
       </label>
-      <label>
+      <label className='label3'>
         X (número de ocorrências desejado):
         <input type="number" value={x} onChange={handleXChange} />
       </label>

@@ -2,3 +2,35 @@
     margin: 0;
     padding: 0;
 }
+.label2{
+    color: #861128;
+    background-color: #deb887;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+    background-image: url("img3.jpg");
+    
+}
+.inp2{
+    background-color: #a9a9e7;
+    color: #7c081f;
+    font-size: 20px;
+    margin: 10px;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  
+  input:focus{
+    animation-name:pulse;
+    animation-duration: 100ms;
+    background-color: #b6dd8f;
+    
+  }
+  
