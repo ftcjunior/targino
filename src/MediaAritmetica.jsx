@@ -24,7 +24,7 @@ const MediaAritmetica = () => {
         value={valor2}
         onChange={(e) => setValor2(e.target.value)}
       />
-      <button className='btn2' onClick={calcularMedia}>Calcular Média</button>
+      <button className='btn2' onClick={calcularMedia}>Calcular Média aritmética</button>
       <p>Média: {media}</p>
       {media > 12 && (
         <img
