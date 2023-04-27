@@ -1,20 +1,15 @@
-import './App.css';
-import Calcular from './components/Testecomponents'
-import Calc3 from './Component3'
-function App() {
+import React from 'react'
+import MediaAritmetica from './MediaAritmetica'
 
-  let nome = 'francisco targino chagas junior'
-  let idade = 52
+function App(){
 
-  return (
-    <div className="App">
-      <p> nome:{nome}</p>
-      <p>idade: {idade}</p>
-     <Calcular/>
-     <Calc3/>
-     
-    </div>
-  );
+ return (
+
+          <>
+       <MediaAritmetica></MediaAritmetica>
+          </>
+              
+    )
 }
 
-export default App;
+export default App
