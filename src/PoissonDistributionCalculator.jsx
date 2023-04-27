@@ -5,9 +5,9 @@ const PoissonDistributionCalculator = () => {
   const [x, setX] = useState('');
   const [result, setResult] = useState('');
 
-  const handleLambdaChange = (e) => {
+  function handleLambdaChange(e) {
     setLambda(e.target.value);
-  };
+  }
 
   const handleXChange = (e) => {
     setX(e.target.value);
